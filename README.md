@@ -21,6 +21,10 @@ Then, download the contents of this tutorial there:
 ```sh
 wget https://github.com/rieder/terminal_tutorial/archive/refs/heads/main.tar.gz
 ```
+If wget is not available, you can probably use `curl` instead:
+```sh
+curl -L https://github.com/rieder/terminal_tutorial/archive/refs/heads/main.tar.gz --output main.tar.gz
+```
 
 And unpack the contents:
 ```sh
