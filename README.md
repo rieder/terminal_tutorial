@@ -24,9 +24,9 @@ wget https://github.com/rieder/terminal_tutorial/archive/refs/heads/main.tar.gz
 
 And unpack the contents:
 ```sh
-tar xzvf main.tar.gz
+tar xvf main.tar.gz
 ```
-**Question:** what does `xzvf` mean here? Try `tar -h` or `tar --help` to find out.
+**Question:** what does `xvf` mean here? Try `tar -h` or `tar --help` to find out.
 
 ## Step 2: move files
 
