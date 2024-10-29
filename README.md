@@ -9,6 +9,8 @@ Create a new directory for this tutorial:
 ```sh
 mkdir $(PWD)/terminal_tutorial
 ```
+**Question:** what does `$(PWD)` mean here?
+
 
 Move from the working directory to this new directory:
 ```sh
@@ -24,12 +26,13 @@ And unpack the contents:
 ```sh
 tar xzvf main.tar.gz
 ```
+**Question:** what does `xzvf` mean here? Try `tar -h` or `tar --help` to find out.
 
 ## Step 2: move files
 
 List the contents of the directory:
 ```sh
-ls -l
+ls
 ```
 
 Move the contents of the `terminal_tutorial-main` directory into the current working directory.
@@ -48,6 +51,7 @@ Find the path of file named `this_file`
 ```sh
 find ./ | grep this
 ```
+**Note:** try running `find ./` and `grep this` on their own to find out what they do. To exit `grep`, use `^C` (control + c).
 
 See what file type the file is:
 ```sh
@@ -65,4 +69,7 @@ Write the last 10 commands to a log file:
 ```sh
 history | tail -n 10 > COMMANDLOG.txt
 ```
-
+To add this last history command to the log as well:
+```sh
+history | tail -n 1 >> COMMANDLOG.txt
+```
